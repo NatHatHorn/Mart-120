@@ -1,0 +1,32 @@
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: maroon;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+span{
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+}
+
+
+.myclass{
+    font-size: medium;
+    color: darkgoldenrod;
+}
+
+
+
+
+
+#myID{
+    font-weight: bold;
+    color: maroon;
+    font-size: large
+    font-style: italic;
+
+}
