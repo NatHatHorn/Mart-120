@@ -1,0 +1,104 @@
+<htm>
+<head>
+    <title>First p5.js page!</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+   <script>
+      var x=200
+      var y=120
+      var x2=232
+      var y2=220
+      var Xmovement=2
+      var X2movement=4
+      var A=160
+      var A2=160
+      var eyemovement=3
+      var eyemovement2=3.5
+      var textsize=25
+      
+       function setup(){
+           createCanvas(500, 600);
+       }
+
+        function draw(){
+            background('rgba(100%,0%,100%,0.5)')
+            fill (255, 255, 255)
+            square(x, y, 100); //HEAD
+            fill (51);
+          
+            if(A>=600||A<=0)
+    {
+       eyemovement*=-1;
+                            //eye 1 y axis movement
+        
+    } 
+        A+=eyemovement;
+    
+        if(A2>=600||A2<=0)
+        {
+            eyemovement2*=-1;
+        }
+        A2+=eyemovement2;
+           
+        circle(225, A, 20); //EYES
+            circle(275, A2, 20); //EYES
+            triangle(40, 70, 70, 20, 86, 75);
+            fill('rgb(100%,0%,10%)')
+            rect(x2,y2,35,110); //BODY
+            line(232,235,150,300);
+            line(268,235,375,290)
+            fill(51);
+            textSize(textsize);
+   /*  size+= sizeDirection;
+    count++;
+    if(count > 5)
+    {                               Name size changer
+        sizeDirection *=-1;
+        count = 0;
+    } */
+            text('Nate Hathorne',180,500); //Name
+            line(205,450,233,329);
+            line(310,450,268,329);
+            point(400, 500);
+            point(300, 350);
+            text('Simple Shapes Art', 140, 30);
+            ellipse(250,175,10,20); //Nose
+           // x++;
+            //x2++;
+            if(x>=400||x<=0)
+    {
+        Xmovement*=-1;      //head x axis movement
+                           // x2+=X2movement;
+    }
+    x+=Xmovement;  
+         
+    
+    
+            if(x2>=460||x2<=0)
+            {
+                X2movement*=-1;                                       // x2+=X2movement; // body x axis movement
+            }
+            x2+=X2movement;
+    
+    
+    
+    
+    
+    
+    /* else
+    {
+        x-=13;
+    }
+}
+    */
+    
+        }
+         </script>
+
+
+
+</head>
+<body>
+
+
+</body>
+</htm>
